@@ -105,12 +105,12 @@ $ rosrun rqt_graph rqt_graph
 ![publisher_counter](https://user-images.githubusercontent.com/28452932/164993408-c3ceba99-3ddd-4b06-b024-53c333b87001.png)
 
 
-#### Run the turtlesim_node
+#### Run our node messi_turtle_pkg publisher_counter 
 ```bash
 $ rosrun messi_turtle_pkg  publisher_counter.py 
 ```
 
-#### Run our node messi_turtle_pkg
+#### Run our node messi_turtle_pkg subscriber
 ```bash
 $ rosrun messi_turtle_pkg subscriber.py
 ```
