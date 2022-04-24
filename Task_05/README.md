@@ -78,3 +78,20 @@ $ rosrun messi_turtle_pkg subscriber.py
 ```bash
 $ rosrun rqt_graph rqt_graph 
 ```
+
+
+## Create Custom ROS Package - User Input  Example_03##
+#### Run the turtlesim_node
+```bash
+$ rosrun turtlesim turtlesim_node  
+```
+
+#### Run our node messi_turtle_pkg
+```bash
+$ rosrun messi_turtle_pkg input_user.py
+```
+
+#### Display the Graph nodes
+```bash
+$ rosrun rqt_graph rqt_graph 
+```
