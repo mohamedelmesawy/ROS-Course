@@ -1,0 +1,8 @@
+prefix=/home/messi/Desktop/messi_ws/install
+
+Name: messi_turtle_pkg
+Description: Description of messi_turtle_pkg
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

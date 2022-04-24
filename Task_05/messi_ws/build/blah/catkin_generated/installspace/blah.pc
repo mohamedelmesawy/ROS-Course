@@ -1,0 +1,8 @@
+prefix=/home/messi/Desktop/messi_ws/install
+
+Name: blah
+Description: Description of blah
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

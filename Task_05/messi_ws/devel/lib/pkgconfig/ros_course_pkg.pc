@@ -1,0 +1,8 @@
+prefix=/home/messi/Desktop/messi_ws/devel
+
+Name: ros_course_pkg
+Description: Description of ros_course_pkg
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
