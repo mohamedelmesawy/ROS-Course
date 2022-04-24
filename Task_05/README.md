@@ -97,3 +97,26 @@ $ rosrun messi_turtle_pkg input_user.py
 #### Display the Graph nodes
 ```bash
 $ rosrun rqt_graph rqt_graph 
+```
+
+
+## Create publisher and subscriber to count from 0 until the user uses CTRL C,  Example_04 ##
+
+![publisher_counter](https://user-images.githubusercontent.com/28452932/164993408-c3ceba99-3ddd-4b06-b024-53c333b87001.png)
+
+
+#### Run the turtlesim_node
+```bash
+$ rosrun messi_turtle_pkg  publisher_counter.py 
+```
+
+#### Run our node messi_turtle_pkg
+```bash
+$ rosrun messi_turtle_pkg subscriber.py
+```
+
+#### Display the Graph nodes
+```bash
+$ rosrun rqt_graph rqt_graph 
+```
+
