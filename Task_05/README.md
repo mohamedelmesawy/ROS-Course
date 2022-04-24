@@ -81,7 +81,8 @@ $ rosrun rqt_graph rqt_graph
 
 
 ## Create Custom ROS Package - User Input  Example_03##
-```![input_user](https://user-images.githubusercontent.com/28452932/164992319-0e457553-d01a-49b3-b57c-35b37fc85a9c.png)
+![input_user](https://user-images.githubusercontent.com/28452932/164992341-5c246eb8-0e43-452c-af70-39605ed02f2b.png)
+
 
 #### Run the turtlesim_node
 ```bash
