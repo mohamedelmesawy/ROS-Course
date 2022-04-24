@@ -81,6 +81,8 @@ $ rosrun rqt_graph rqt_graph
 
 
 ## Create Custom ROS Package - User Input  Example_03##
+```![input_user](https://user-images.githubusercontent.com/28452932/164992319-0e457553-d01a-49b3-b57c-35b37fc85a9c.png)
+
 #### Run the turtlesim_node
 ```bash
 $ rosrun turtlesim turtlesim_node  
@@ -94,4 +96,3 @@ $ rosrun messi_turtle_pkg input_user.py
 #### Display the Graph nodes
 ```bash
 $ rosrun rqt_graph rqt_graph 
-```
