@@ -150,12 +150,12 @@ $ rosrun rqt_graph rqt_graph
 ![Message](https://user-images.githubusercontent.com/28452932/166560864-1f601ba5-4152-43af-84ab-a6d2be738ffb.jpg)
 
 
-#### Run our node test_pkg mypublisher.py 
+#### Run our node test_pkg mypublisher.py   --> which exists in workspace other_ws
 ```bash
 $ rosrun test_pkg mypublisher.py 
 ```
 
-#### Run our node messi_turtle_pkg subscriber
+#### Run our node test_pkg mysubscriber.py  --> which exists in workspace other_ws
 ```bash
 $ rosrun test_pkg mysubscriber.py
 ```
