@@ -1,8 +1,8 @@
-# Install script for directory: /home/messi/Desktop/messi_ws/src/blah
+# Install script for directory: /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/blah
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/messi/Desktop/messi_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/messi/Desktop/ROS-Course/Task_05/messi_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/messi/Desktop/messi_ws/build/blah/catkin_generated/installspace/blah.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/messi/Desktop/ROS-Course/Task_05/messi_ws/build/blah/catkin_generated/installspace/blah.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/blah/cmake" TYPE FILE FILES
-    "/home/messi/Desktop/messi_ws/build/blah/catkin_generated/installspace/blahConfig.cmake"
-    "/home/messi/Desktop/messi_ws/build/blah/catkin_generated/installspace/blahConfig-version.cmake"
+    "/home/messi/Desktop/ROS-Course/Task_05/messi_ws/build/blah/catkin_generated/installspace/blahConfig.cmake"
+    "/home/messi/Desktop/ROS-Course/Task_05/messi_ws/build/blah/catkin_generated/installspace/blahConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/blah" TYPE FILE FILES "/home/messi/Desktop/messi_ws/src/blah/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/blah" TYPE FILE FILES "/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/blah/package.xml")
 endif()
 

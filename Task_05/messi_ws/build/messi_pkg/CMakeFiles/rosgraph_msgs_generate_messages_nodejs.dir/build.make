@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/messi/Desktop/messi_ws/src
+CMAKE_SOURCE_DIR = /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/messi/Desktop/messi_ws/build
+CMAKE_BINARY_DIR = /home/messi/Desktop/ROS-Course/Task_05/messi_ws/build
 
 # Utility rule file for rosgraph_msgs_generate_messages_nodejs.
 
@@ -63,10 +63,10 @@ messi_pkg/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build: rosgraph_
 .PHONY : messi_pkg/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
 
 messi_pkg/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean:
-	cd /home/messi/Desktop/messi_ws/build/messi_pkg && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/cmake_clean.cmake
+	cd /home/messi/Desktop/ROS-Course/Task_05/messi_ws/build/messi_pkg && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/cmake_clean.cmake
 .PHONY : messi_pkg/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
 
 messi_pkg/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/depend:
-	cd /home/messi/Desktop/messi_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/messi/Desktop/messi_ws/src /home/messi/Desktop/messi_ws/src/messi_pkg /home/messi/Desktop/messi_ws/build /home/messi/Desktop/messi_ws/build/messi_pkg /home/messi/Desktop/messi_ws/build/messi_pkg/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/messi/Desktop/ROS-Course/Task_05/messi_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/messi_pkg /home/messi/Desktop/ROS-Course/Task_05/messi_ws/build /home/messi/Desktop/ROS-Course/Task_05/messi_ws/build/messi_pkg /home/messi/Desktop/ROS-Course/Task_05/messi_ws/build/messi_pkg/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : messi_pkg/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/depend
 

@@ -1,4 +1,4 @@
-prefix=/home/messi/Desktop/messi_ws/devel
+prefix=/home/messi/Desktop/ROS-Course/Task_05/messi_ws/devel
 
 Name: messi_turtle_pkg
 Description: Description of messi_turtle_pkg

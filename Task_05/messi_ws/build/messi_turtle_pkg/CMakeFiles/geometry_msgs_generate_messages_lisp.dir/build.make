@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/messi/Desktop/messi_ws/src
+CMAKE_SOURCE_DIR = /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/messi/Desktop/messi_ws/build
+CMAKE_BINARY_DIR = /home/messi/Desktop/ROS-Course/Task_05/messi_ws/build
 
 # Utility rule file for geometry_msgs_generate_messages_lisp.
 
@@ -63,10 +63,10 @@ messi_turtle_pkg/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build: geom
 .PHONY : messi_turtle_pkg/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
 
 messi_turtle_pkg/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean:
-	cd /home/messi/Desktop/messi_ws/build/messi_turtle_pkg && $(CMAKE_COMMAND) -P CMakeFiles/geometry_msgs_generate_messages_lisp.dir/cmake_clean.cmake
+	cd /home/messi/Desktop/ROS-Course/Task_05/messi_ws/build/messi_turtle_pkg && $(CMAKE_COMMAND) -P CMakeFiles/geometry_msgs_generate_messages_lisp.dir/cmake_clean.cmake
 .PHONY : messi_turtle_pkg/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
 
 messi_turtle_pkg/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/depend:
-	cd /home/messi/Desktop/messi_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/messi/Desktop/messi_ws/src /home/messi/Desktop/messi_ws/src/messi_turtle_pkg /home/messi/Desktop/messi_ws/build /home/messi/Desktop/messi_ws/build/messi_turtle_pkg /home/messi/Desktop/messi_ws/build/messi_turtle_pkg/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/messi/Desktop/ROS-Course/Task_05/messi_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/messi_turtle_pkg /home/messi/Desktop/ROS-Course/Task_05/messi_ws/build /home/messi/Desktop/ROS-Course/Task_05/messi_ws/build/messi_turtle_pkg /home/messi/Desktop/ROS-Course/Task_05/messi_ws/build/messi_turtle_pkg/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : messi_turtle_pkg/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/depend
 

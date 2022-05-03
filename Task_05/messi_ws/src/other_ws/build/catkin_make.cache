@@ -1,0 +1,2 @@
+test_pkg
+-DCATKIN_DEVEL_PREFIX=/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel -DCMAKE_INSTALL_PREFIX=/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/install -G Unix Makefiles

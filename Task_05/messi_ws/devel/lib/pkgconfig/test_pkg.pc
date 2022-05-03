@@ -1,0 +1,8 @@
+prefix=/home/messi/Desktop/ROS-Course/Task_05/messi_ws/devel
+
+Name: test_pkg
+Description: Description of test_pkg
+Version: 0.0.0
+Cflags: -I/home/messi/Desktop/ROS-Course/Task_05/messi_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: roscpp rospy std_msgs message_runtime
