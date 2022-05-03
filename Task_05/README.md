@@ -141,3 +141,30 @@ $ rosrun messi_turtle_pkg subscriber.py
 ```bash
 $ rosrun rqt_graph rqt_graph 
 ```
+
+
+
+
+
+## Create Custom Message - Example_06
+![Message](https://user-images.githubusercontent.com/28452932/166560864-1f601ba5-4152-43af-84ab-a6d2be738ffb.jpg)
+
+
+#### Run our node test_pkg mypublisher.py 
+```bash
+$ rosrun test_pkg mypublisher.py 
+```
+
+#### Run our node messi_turtle_pkg subscriber
+```bash
+$ rosrun test_pkg mysubscriber.py
+```
+
+#### Display the Graph nodes
+```bash
+$ rosrun rqt_graph rqt_graph 
+```
+
+
+
+
