@@ -7,7 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel:$CMAKE_PREFIX_PATH"
 export PWD='/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/build'
-export ROSLISP_PACKAGE_DIRECTORIES='/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/common-lisp'
-export ROS_PACKAGE_PATH="/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src:$ROS_PACKAGE_PATH"

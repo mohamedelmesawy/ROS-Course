@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/common-lisp/ros/test_pkg/msg/mymessage.lisp"
+  "/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/common-lisp/ros/test_pkg/srv/Adding_numbers.lisp"
+  "/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/common-lisp/ros/test_pkg/srv/Count_words.lisp"
   "CMakeFiles/test_pkg_generate_messages_lisp"
 )
 

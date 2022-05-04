@@ -90,6 +90,17 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -102,17 +113,6 @@ install/local/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
@@ -124,16 +124,16 @@ test/fast: test
 
 .PHONY : test/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
 
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
 
-.PHONY : edit_cache/fast
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -226,6 +226,36 @@ std_msgs_generate_messages_cpp: test_pkg/CMakeFiles/std_msgs_generate_messages_c
 std_msgs_generate_messages_cpp/fast:
 	cd /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/build && $(MAKE) -f test_pkg/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make test_pkg/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 .PHONY : std_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+test_pkg/CMakeFiles/test_pkg_geneus.dir/rule:
+	cd /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/build && $(MAKE) -f CMakeFiles/Makefile2 test_pkg/CMakeFiles/test_pkg_geneus.dir/rule
+.PHONY : test_pkg/CMakeFiles/test_pkg_geneus.dir/rule
+
+# Convenience name for target.
+test_pkg_geneus: test_pkg/CMakeFiles/test_pkg_geneus.dir/rule
+
+.PHONY : test_pkg_geneus
+
+# fast build rule for target.
+test_pkg_geneus/fast:
+	cd /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/build && $(MAKE) -f test_pkg/CMakeFiles/test_pkg_geneus.dir/build.make test_pkg/CMakeFiles/test_pkg_geneus.dir/build
+.PHONY : test_pkg_geneus/fast
+
+# Convenience name for target.
+test_pkg/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
+	cd /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/build && $(MAKE) -f CMakeFiles/Makefile2 test_pkg/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+.PHONY : test_pkg/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_cpp: test_pkg/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_cpp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_cpp/fast:
+	cd /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/build && $(MAKE) -f test_pkg/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make test_pkg/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 test_pkg/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule:
@@ -408,6 +438,21 @@ std_msgs_generate_messages_nodejs/fast:
 .PHONY : std_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
+test_pkg/CMakeFiles/_test_pkg_generate_messages_check_deps_Count_words.dir/rule:
+	cd /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/build && $(MAKE) -f CMakeFiles/Makefile2 test_pkg/CMakeFiles/_test_pkg_generate_messages_check_deps_Count_words.dir/rule
+.PHONY : test_pkg/CMakeFiles/_test_pkg_generate_messages_check_deps_Count_words.dir/rule
+
+# Convenience name for target.
+_test_pkg_generate_messages_check_deps_Count_words: test_pkg/CMakeFiles/_test_pkg_generate_messages_check_deps_Count_words.dir/rule
+
+.PHONY : _test_pkg_generate_messages_check_deps_Count_words
+
+# fast build rule for target.
+_test_pkg_generate_messages_check_deps_Count_words/fast:
+	cd /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/build && $(MAKE) -f test_pkg/CMakeFiles/_test_pkg_generate_messages_check_deps_Count_words.dir/build.make test_pkg/CMakeFiles/_test_pkg_generate_messages_check_deps_Count_words.dir/build
+.PHONY : _test_pkg_generate_messages_check_deps_Count_words/fast
+
+# Convenience name for target.
 test_pkg/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
 	cd /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/build && $(MAKE) -f CMakeFiles/Makefile2 test_pkg/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 .PHONY : test_pkg/CMakeFiles/std_msgs_generate_messages_py.dir/rule
@@ -451,6 +496,21 @@ test_pkg_generate_messages_lisp: test_pkg/CMakeFiles/test_pkg_generate_messages_
 test_pkg_generate_messages_lisp/fast:
 	cd /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/build && $(MAKE) -f test_pkg/CMakeFiles/test_pkg_generate_messages_lisp.dir/build.make test_pkg/CMakeFiles/test_pkg_generate_messages_lisp.dir/build
 .PHONY : test_pkg_generate_messages_lisp/fast
+
+# Convenience name for target.
+test_pkg/CMakeFiles/_test_pkg_generate_messages_check_deps_Adding_numbers.dir/rule:
+	cd /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/build && $(MAKE) -f CMakeFiles/Makefile2 test_pkg/CMakeFiles/_test_pkg_generate_messages_check_deps_Adding_numbers.dir/rule
+.PHONY : test_pkg/CMakeFiles/_test_pkg_generate_messages_check_deps_Adding_numbers.dir/rule
+
+# Convenience name for target.
+_test_pkg_generate_messages_check_deps_Adding_numbers: test_pkg/CMakeFiles/_test_pkg_generate_messages_check_deps_Adding_numbers.dir/rule
+
+.PHONY : _test_pkg_generate_messages_check_deps_Adding_numbers
+
+# fast build rule for target.
+_test_pkg_generate_messages_check_deps_Adding_numbers/fast:
+	cd /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/build && $(MAKE) -f test_pkg/CMakeFiles/_test_pkg_generate_messages_check_deps_Adding_numbers.dir/build.make test_pkg/CMakeFiles/_test_pkg_generate_messages_check_deps_Adding_numbers.dir/build
+.PHONY : _test_pkg_generate_messages_check_deps_Adding_numbers/fast
 
 # Convenience name for target.
 test_pkg/CMakeFiles/test_pkg_generate_messages_cpp.dir/rule:
@@ -542,36 +602,6 @@ test_pkg_generate_messages_py/fast:
 	cd /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/build && $(MAKE) -f test_pkg/CMakeFiles/test_pkg_generate_messages_py.dir/build.make test_pkg/CMakeFiles/test_pkg_generate_messages_py.dir/build
 .PHONY : test_pkg_generate_messages_py/fast
 
-# Convenience name for target.
-test_pkg/CMakeFiles/test_pkg_geneus.dir/rule:
-	cd /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/build && $(MAKE) -f CMakeFiles/Makefile2 test_pkg/CMakeFiles/test_pkg_geneus.dir/rule
-.PHONY : test_pkg/CMakeFiles/test_pkg_geneus.dir/rule
-
-# Convenience name for target.
-test_pkg_geneus: test_pkg/CMakeFiles/test_pkg_geneus.dir/rule
-
-.PHONY : test_pkg_geneus
-
-# fast build rule for target.
-test_pkg_geneus/fast:
-	cd /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/build && $(MAKE) -f test_pkg/CMakeFiles/test_pkg_geneus.dir/build.make test_pkg/CMakeFiles/test_pkg_geneus.dir/build
-.PHONY : test_pkg_geneus/fast
-
-# Convenience name for target.
-test_pkg/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
-	cd /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/build && $(MAKE) -f CMakeFiles/Makefile2 test_pkg/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-.PHONY : test_pkg/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_cpp: test_pkg/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_cpp
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_cpp/fast:
-	cd /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/build && $(MAKE) -f test_pkg/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make test_pkg/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_cpp/fast
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -581,11 +611,15 @@ help:
 	@echo "... install/strip"
 	@echo "... install"
 	@echo "... list_install_components"
+	@echo "... edit_cache"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... install/local"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... std_msgs_generate_messages_cpp"
+	@echo "... test"
+	@echo "... test_pkg_geneus"
+	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... std_msgs_generate_messages_lisp"
@@ -599,19 +633,17 @@ help:
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... test_pkg_gennodejs"
 	@echo "... std_msgs_generate_messages_nodejs"
+	@echo "... _test_pkg_generate_messages_check_deps_Count_words"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... _test_pkg_generate_messages_check_deps_mymessage"
 	@echo "... test_pkg_generate_messages_lisp"
+	@echo "... _test_pkg_generate_messages_check_deps_Adding_numbers"
 	@echo "... test_pkg_generate_messages_cpp"
 	@echo "... test_pkg_gencpp"
 	@echo "... test_pkg_genpy"
 	@echo "... test_pkg_genlisp"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... test_pkg_generate_messages_py"
-	@echo "... test_pkg_geneus"
-	@echo "... rosgraph_msgs_generate_messages_cpp"
-	@echo "... test"
-	@echo "... edit_cache"
 .PHONY : help
 
 

@@ -42,6 +42,13 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/test_pkg/srv" TYPE FILE FILES
+    "/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/srv/Adding_numbers.srv"
+    "/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/srv/Count_words.srv"
+    )
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/test_pkg/cmake" TYPE FILE FILES "/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/build/test_pkg/catkin_generated/installspace/test_pkg-msg-paths.cmake")
 endif()
 

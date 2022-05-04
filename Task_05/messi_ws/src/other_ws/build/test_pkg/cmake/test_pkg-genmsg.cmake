@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "test_pkg: 1 messages, 0 services")
+message(STATUS "test_pkg: 1 messages, 2 services")
 
 set(MSG_I_FLAGS "-Itest_pkg:/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg")
 
@@ -22,6 +22,16 @@ add_custom_target(_test_pkg_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "test_pkg" "/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/msg/mymessage.msg" ""
 )
 
+get_filename_component(_filename "/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/srv/Adding_numbers.srv" NAME_WE)
+add_custom_target(_test_pkg_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "test_pkg" "/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/srv/Adding_numbers.srv" ""
+)
+
+get_filename_component(_filename "/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/srv/Count_words.srv" NAME_WE)
+add_custom_target(_test_pkg_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "test_pkg" "/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/srv/Count_words.srv" ""
+)
+
 #
 #  langs = gencpp;geneus;genlisp;gennodejs;genpy
 #
@@ -36,6 +46,18 @@ _generate_msg_cpp(test_pkg
 )
 
 ### Generating Services
+_generate_srv_cpp(test_pkg
+  "/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/srv/Adding_numbers.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/test_pkg
+)
+_generate_srv_cpp(test_pkg
+  "/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/srv/Count_words.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/test_pkg
+)
 
 ### Generating Module File
 _generate_module_cpp(test_pkg
@@ -50,6 +72,10 @@ add_dependencies(test_pkg_generate_messages test_pkg_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/msg/mymessage.msg" NAME_WE)
+add_dependencies(test_pkg_generate_messages_cpp _test_pkg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/srv/Adding_numbers.srv" NAME_WE)
+add_dependencies(test_pkg_generate_messages_cpp _test_pkg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/srv/Count_words.srv" NAME_WE)
 add_dependencies(test_pkg_generate_messages_cpp _test_pkg_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -69,6 +95,18 @@ _generate_msg_eus(test_pkg
 )
 
 ### Generating Services
+_generate_srv_eus(test_pkg
+  "/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/srv/Adding_numbers.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/test_pkg
+)
+_generate_srv_eus(test_pkg
+  "/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/srv/Count_words.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/test_pkg
+)
 
 ### Generating Module File
 _generate_module_eus(test_pkg
@@ -83,6 +121,10 @@ add_dependencies(test_pkg_generate_messages test_pkg_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/msg/mymessage.msg" NAME_WE)
+add_dependencies(test_pkg_generate_messages_eus _test_pkg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/srv/Adding_numbers.srv" NAME_WE)
+add_dependencies(test_pkg_generate_messages_eus _test_pkg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/srv/Count_words.srv" NAME_WE)
 add_dependencies(test_pkg_generate_messages_eus _test_pkg_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -102,6 +144,18 @@ _generate_msg_lisp(test_pkg
 )
 
 ### Generating Services
+_generate_srv_lisp(test_pkg
+  "/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/srv/Adding_numbers.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/test_pkg
+)
+_generate_srv_lisp(test_pkg
+  "/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/srv/Count_words.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/test_pkg
+)
 
 ### Generating Module File
 _generate_module_lisp(test_pkg
@@ -116,6 +170,10 @@ add_dependencies(test_pkg_generate_messages test_pkg_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/msg/mymessage.msg" NAME_WE)
+add_dependencies(test_pkg_generate_messages_lisp _test_pkg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/srv/Adding_numbers.srv" NAME_WE)
+add_dependencies(test_pkg_generate_messages_lisp _test_pkg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/srv/Count_words.srv" NAME_WE)
 add_dependencies(test_pkg_generate_messages_lisp _test_pkg_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -135,6 +193,18 @@ _generate_msg_nodejs(test_pkg
 )
 
 ### Generating Services
+_generate_srv_nodejs(test_pkg
+  "/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/srv/Adding_numbers.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/test_pkg
+)
+_generate_srv_nodejs(test_pkg
+  "/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/srv/Count_words.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/test_pkg
+)
 
 ### Generating Module File
 _generate_module_nodejs(test_pkg
@@ -149,6 +219,10 @@ add_dependencies(test_pkg_generate_messages test_pkg_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/msg/mymessage.msg" NAME_WE)
+add_dependencies(test_pkg_generate_messages_nodejs _test_pkg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/srv/Adding_numbers.srv" NAME_WE)
+add_dependencies(test_pkg_generate_messages_nodejs _test_pkg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/srv/Count_words.srv" NAME_WE)
 add_dependencies(test_pkg_generate_messages_nodejs _test_pkg_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -168,6 +242,18 @@ _generate_msg_py(test_pkg
 )
 
 ### Generating Services
+_generate_srv_py(test_pkg
+  "/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/srv/Adding_numbers.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/test_pkg
+)
+_generate_srv_py(test_pkg
+  "/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/srv/Count_words.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/test_pkg
+)
 
 ### Generating Module File
 _generate_module_py(test_pkg
@@ -182,6 +268,10 @@ add_dependencies(test_pkg_generate_messages test_pkg_generate_messages_py)
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/msg/mymessage.msg" NAME_WE)
+add_dependencies(test_pkg_generate_messages_py _test_pkg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/srv/Adding_numbers.srv" NAME_WE)
+add_dependencies(test_pkg_generate_messages_py _test_pkg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/srv/Count_words.srv" NAME_WE)
 add_dependencies(test_pkg_generate_messages_py _test_pkg_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

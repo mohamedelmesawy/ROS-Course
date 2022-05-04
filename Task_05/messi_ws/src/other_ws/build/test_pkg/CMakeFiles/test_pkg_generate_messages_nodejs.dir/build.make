@@ -54,6 +54,8 @@ CMAKE_BINARY_DIR = /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/
 include test_pkg/CMakeFiles/test_pkg_generate_messages_nodejs.dir/progress.make
 
 test_pkg/CMakeFiles/test_pkg_generate_messages_nodejs: /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/gennodejs/ros/test_pkg/msg/mymessage.js
+test_pkg/CMakeFiles/test_pkg_generate_messages_nodejs: /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/gennodejs/ros/test_pkg/srv/Adding_numbers.js
+test_pkg/CMakeFiles/test_pkg_generate_messages_nodejs: /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/gennodejs/ros/test_pkg/srv/Count_words.js
 
 
 /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/gennodejs/ros/test_pkg/msg/mymessage.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
@@ -61,8 +63,20 @@ test_pkg/CMakeFiles/test_pkg_generate_messages_nodejs: /home/messi/Desktop/ROS-C
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from test_pkg/mymessage.msg"
 	cd /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/build/test_pkg && ../catkin_generated/env_cached.sh /home/messi/anaconda3/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/msg/mymessage.msg -Itest_pkg:/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p test_pkg -o /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/gennodejs/ros/test_pkg/msg
 
+/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/gennodejs/ros/test_pkg/srv/Adding_numbers.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
+/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/gennodejs/ros/test_pkg/srv/Adding_numbers.js: /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/srv/Adding_numbers.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from test_pkg/Adding_numbers.srv"
+	cd /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/build/test_pkg && ../catkin_generated/env_cached.sh /home/messi/anaconda3/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/srv/Adding_numbers.srv -Itest_pkg:/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p test_pkg -o /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/gennodejs/ros/test_pkg/srv
+
+/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/gennodejs/ros/test_pkg/srv/Count_words.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
+/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/gennodejs/ros/test_pkg/srv/Count_words.js: /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/srv/Count_words.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Javascript code from test_pkg/Count_words.srv"
+	cd /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/build/test_pkg && ../catkin_generated/env_cached.sh /home/messi/anaconda3/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/srv/Count_words.srv -Itest_pkg:/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p test_pkg -o /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/gennodejs/ros/test_pkg/srv
+
 test_pkg_generate_messages_nodejs: test_pkg/CMakeFiles/test_pkg_generate_messages_nodejs
 test_pkg_generate_messages_nodejs: /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/gennodejs/ros/test_pkg/msg/mymessage.js
+test_pkg_generate_messages_nodejs: /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/gennodejs/ros/test_pkg/srv/Adding_numbers.js
+test_pkg_generate_messages_nodejs: /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/gennodejs/ros/test_pkg/srv/Count_words.js
 test_pkg_generate_messages_nodejs: test_pkg/CMakeFiles/test_pkg_generate_messages_nodejs.dir/build.make
 
 .PHONY : test_pkg_generate_messages_nodejs

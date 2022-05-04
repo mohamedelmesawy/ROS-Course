@@ -1,7 +1,7 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
 messages_str = "/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/msg/mymessage.msg"
-services_str = ""
+services_str = "/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/srv/Adding_numbers.srv;/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/srv/Count_words.srv"
 pkg_name = "test_pkg"
 dependencies_str = "std_msgs"
 langs = "gencpp;geneus;genlisp;gennodejs;genpy"

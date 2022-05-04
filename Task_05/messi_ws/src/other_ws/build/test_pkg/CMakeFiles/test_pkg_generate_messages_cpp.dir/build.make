@@ -54,6 +54,8 @@ CMAKE_BINARY_DIR = /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/
 include test_pkg/CMakeFiles/test_pkg_generate_messages_cpp.dir/progress.make
 
 test_pkg/CMakeFiles/test_pkg_generate_messages_cpp: /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/include/test_pkg/mymessage.h
+test_pkg/CMakeFiles/test_pkg_generate_messages_cpp: /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/include/test_pkg/Adding_numbers.h
+test_pkg/CMakeFiles/test_pkg_generate_messages_cpp: /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/include/test_pkg/Count_words.h
 
 
 /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/include/test_pkg/mymessage.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
@@ -62,8 +64,24 @@ test_pkg/CMakeFiles/test_pkg_generate_messages_cpp: /home/messi/Desktop/ROS-Cour
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from test_pkg/mymessage.msg"
 	cd /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg && /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/build/catkin_generated/env_cached.sh /home/messi/anaconda3/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/msg/mymessage.msg -Itest_pkg:/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p test_pkg -o /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/include/test_pkg -e /opt/ros/noetic/share/gencpp/cmake/..
 
+/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/include/test_pkg/Adding_numbers.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/include/test_pkg/Adding_numbers.h: /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/srv/Adding_numbers.srv
+/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/include/test_pkg/Adding_numbers.h: /opt/ros/noetic/share/gencpp/msg.h.template
+/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/include/test_pkg/Adding_numbers.h: /opt/ros/noetic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from test_pkg/Adding_numbers.srv"
+	cd /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg && /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/build/catkin_generated/env_cached.sh /home/messi/anaconda3/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/srv/Adding_numbers.srv -Itest_pkg:/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p test_pkg -o /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/include/test_pkg -e /opt/ros/noetic/share/gencpp/cmake/..
+
+/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/include/test_pkg/Count_words.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/include/test_pkg/Count_words.h: /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/srv/Count_words.srv
+/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/include/test_pkg/Count_words.h: /opt/ros/noetic/share/gencpp/msg.h.template
+/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/include/test_pkg/Count_words.h: /opt/ros/noetic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating C++ code from test_pkg/Count_words.srv"
+	cd /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg && /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/build/catkin_generated/env_cached.sh /home/messi/anaconda3/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/srv/Count_words.srv -Itest_pkg:/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p test_pkg -o /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/include/test_pkg -e /opt/ros/noetic/share/gencpp/cmake/..
+
 test_pkg_generate_messages_cpp: test_pkg/CMakeFiles/test_pkg_generate_messages_cpp
 test_pkg_generate_messages_cpp: /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/include/test_pkg/mymessage.h
+test_pkg_generate_messages_cpp: /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/include/test_pkg/Adding_numbers.h
+test_pkg_generate_messages_cpp: /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/include/test_pkg/Count_words.h
 test_pkg_generate_messages_cpp: test_pkg/CMakeFiles/test_pkg_generate_messages_cpp.dir/build.make
 
 .PHONY : test_pkg_generate_messages_cpp

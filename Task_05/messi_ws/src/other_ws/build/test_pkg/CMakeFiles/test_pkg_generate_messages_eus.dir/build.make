@@ -54,6 +54,8 @@ CMAKE_BINARY_DIR = /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/
 include test_pkg/CMakeFiles/test_pkg_generate_messages_eus.dir/progress.make
 
 test_pkg/CMakeFiles/test_pkg_generate_messages_eus: /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/roseus/ros/test_pkg/msg/mymessage.l
+test_pkg/CMakeFiles/test_pkg_generate_messages_eus: /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/roseus/ros/test_pkg/srv/Adding_numbers.l
+test_pkg/CMakeFiles/test_pkg_generate_messages_eus: /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/roseus/ros/test_pkg/srv/Count_words.l
 test_pkg/CMakeFiles/test_pkg_generate_messages_eus: /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/roseus/ros/test_pkg/manifest.l
 
 
@@ -62,12 +64,24 @@ test_pkg/CMakeFiles/test_pkg_generate_messages_eus: /home/messi/Desktop/ROS-Cour
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from test_pkg/mymessage.msg"
 	cd /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/build/test_pkg && ../catkin_generated/env_cached.sh /home/messi/anaconda3/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/msg/mymessage.msg -Itest_pkg:/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p test_pkg -o /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/roseus/ros/test_pkg/msg
 
+/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/roseus/ros/test_pkg/srv/Adding_numbers.l: /opt/ros/noetic/lib/geneus/gen_eus.py
+/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/roseus/ros/test_pkg/srv/Adding_numbers.l: /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/srv/Adding_numbers.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from test_pkg/Adding_numbers.srv"
+	cd /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/build/test_pkg && ../catkin_generated/env_cached.sh /home/messi/anaconda3/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/srv/Adding_numbers.srv -Itest_pkg:/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p test_pkg -o /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/roseus/ros/test_pkg/srv
+
+/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/roseus/ros/test_pkg/srv/Count_words.l: /opt/ros/noetic/lib/geneus/gen_eus.py
+/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/roseus/ros/test_pkg/srv/Count_words.l: /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/srv/Count_words.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp code from test_pkg/Count_words.srv"
+	cd /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/build/test_pkg && ../catkin_generated/env_cached.sh /home/messi/anaconda3/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/srv/Count_words.srv -Itest_pkg:/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p test_pkg -o /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/roseus/ros/test_pkg/srv
+
 /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/roseus/ros/test_pkg/manifest.l: /opt/ros/noetic/lib/geneus/gen_eus.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp manifest code for test_pkg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating EusLisp manifest code for test_pkg"
 	cd /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/build/test_pkg && ../catkin_generated/env_cached.sh /home/messi/anaconda3/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/roseus/ros/test_pkg test_pkg std_msgs
 
 test_pkg_generate_messages_eus: test_pkg/CMakeFiles/test_pkg_generate_messages_eus
 test_pkg_generate_messages_eus: /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/roseus/ros/test_pkg/msg/mymessage.l
+test_pkg_generate_messages_eus: /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/roseus/ros/test_pkg/srv/Adding_numbers.l
+test_pkg_generate_messages_eus: /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/roseus/ros/test_pkg/srv/Count_words.l
 test_pkg_generate_messages_eus: /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/roseus/ros/test_pkg/manifest.l
 test_pkg_generate_messages_eus: test_pkg/CMakeFiles/test_pkg_generate_messages_eus.dir/build.make
 

@@ -1,12 +1,25 @@
 # Hashes of file build rules.
+0874ccce71c050a7cd7382c6a2c8bca8 /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/include/test_pkg/Adding_numbers.h
+6b8210f2c9dcc3327dcb9aa2636dc458 /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/include/test_pkg/Count_words.h
 7c25bc60b4a973a9ec9319ec87e8ed84 /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/include/test_pkg/mymessage.h
 28b7f65b1b92b9556be980d951a2845b /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/lib/python3/dist-packages/test_pkg/msg/__init__.py
 5bdb1ed2325ccb92a6f0623f435e2382 /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/lib/python3/dist-packages/test_pkg/msg/_mymessage.py
+a5054d8035da16a7c9459039dca009ef /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/lib/python3/dist-packages/test_pkg/srv/_Adding_numbers.py
+b43ec48328159f818ae2a763b53a9e6d /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/lib/python3/dist-packages/test_pkg/srv/_Count_words.py
+115b76aad7095661ab05ff97fa380cb8 /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/lib/python3/dist-packages/test_pkg/srv/__init__.py
 e9c08ee2283de663fc98014047b7f478 /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/common-lisp/ros/test_pkg/msg/mymessage.lisp
+d0c0646e9c2ebf63b7c7643608459646 /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/common-lisp/ros/test_pkg/srv/Adding_numbers.lisp
+29ee277b11522e410b913c00c9dd223e /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/common-lisp/ros/test_pkg/srv/Count_words.lisp
 f1cd948955e227e18cedb35a9b1a4558 /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/gennodejs/ros/test_pkg/msg/mymessage.js
+0509ff857ebeeb44ecc4f23879a6e416 /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/gennodejs/ros/test_pkg/srv/Adding_numbers.js
+f3f86f3b736aa0a8f938599883713756 /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/gennodejs/ros/test_pkg/srv/Count_words.js
 37baddd2b4b034fe65caeac2e1cfa6ae /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/roseus/ros/test_pkg/manifest.l
 119b2f4b4f924dcaed284663fd9deb6b /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/roseus/ros/test_pkg/msg/mymessage.l
+c6c0a7cc460bcc360ff765e3989fc529 /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/roseus/ros/test_pkg/srv/Adding_numbers.l
+c158d567a4ff3767f808b1cdd986ae0a /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/roseus/ros/test_pkg/srv/Count_words.l
 d7dbc583f3fe682cac42635d5ac43309 CMakeFiles/clean_test_results
+2734a3367b07f69ff0f429a572c9d039 test_pkg/CMakeFiles/_test_pkg_generate_messages_check_deps_Adding_numbers
+a9e1a1c7d80313944ecb6ab2597742f2 test_pkg/CMakeFiles/_test_pkg_generate_messages_check_deps_Count_words
 f1b030077e53e17306891015833660db test_pkg/CMakeFiles/_test_pkg_generate_messages_check_deps_mymessage
 cd6942157c2a4fe56faaa9476acaa50a test_pkg/CMakeFiles/test_pkg_generate_messages_cpp
 cd6942157c2a4fe56faaa9476acaa50a test_pkg/CMakeFiles/test_pkg_generate_messages_eus

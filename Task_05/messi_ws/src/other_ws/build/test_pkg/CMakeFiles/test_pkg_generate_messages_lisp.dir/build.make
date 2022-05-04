@@ -54,6 +54,8 @@ CMAKE_BINARY_DIR = /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/
 include test_pkg/CMakeFiles/test_pkg_generate_messages_lisp.dir/progress.make
 
 test_pkg/CMakeFiles/test_pkg_generate_messages_lisp: /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/common-lisp/ros/test_pkg/msg/mymessage.lisp
+test_pkg/CMakeFiles/test_pkg_generate_messages_lisp: /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/common-lisp/ros/test_pkg/srv/Adding_numbers.lisp
+test_pkg/CMakeFiles/test_pkg_generate_messages_lisp: /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/common-lisp/ros/test_pkg/srv/Count_words.lisp
 
 
 /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/common-lisp/ros/test_pkg/msg/mymessage.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
@@ -61,8 +63,20 @@ test_pkg/CMakeFiles/test_pkg_generate_messages_lisp: /home/messi/Desktop/ROS-Cou
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Lisp code from test_pkg/mymessage.msg"
 	cd /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/build/test_pkg && ../catkin_generated/env_cached.sh /home/messi/anaconda3/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/msg/mymessage.msg -Itest_pkg:/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p test_pkg -o /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/common-lisp/ros/test_pkg/msg
 
+/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/common-lisp/ros/test_pkg/srv/Adding_numbers.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
+/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/common-lisp/ros/test_pkg/srv/Adding_numbers.lisp: /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/srv/Adding_numbers.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Lisp code from test_pkg/Adding_numbers.srv"
+	cd /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/build/test_pkg && ../catkin_generated/env_cached.sh /home/messi/anaconda3/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/srv/Adding_numbers.srv -Itest_pkg:/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p test_pkg -o /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/common-lisp/ros/test_pkg/srv
+
+/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/common-lisp/ros/test_pkg/srv/Count_words.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
+/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/common-lisp/ros/test_pkg/srv/Count_words.lisp: /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/srv/Count_words.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Lisp code from test_pkg/Count_words.srv"
+	cd /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/build/test_pkg && ../catkin_generated/env_cached.sh /home/messi/anaconda3/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/srv/Count_words.srv -Itest_pkg:/home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/src/test_pkg/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p test_pkg -o /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/common-lisp/ros/test_pkg/srv
+
 test_pkg_generate_messages_lisp: test_pkg/CMakeFiles/test_pkg_generate_messages_lisp
 test_pkg_generate_messages_lisp: /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/common-lisp/ros/test_pkg/msg/mymessage.lisp
+test_pkg_generate_messages_lisp: /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/common-lisp/ros/test_pkg/srv/Adding_numbers.lisp
+test_pkg_generate_messages_lisp: /home/messi/Desktop/ROS-Course/Task_05/messi_ws/src/other_ws/devel/share/common-lisp/ros/test_pkg/srv/Count_words.lisp
 test_pkg_generate_messages_lisp: test_pkg/CMakeFiles/test_pkg_generate_messages_lisp.dir/build.make
 
 .PHONY : test_pkg_generate_messages_lisp
