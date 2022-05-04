@@ -168,3 +168,46 @@ $ rosrun rqt_graph rqt_graph
 
 
 
+## Create Custom Service - Words Counter - Example_07
+
+![Service_words_counter](https://user-images.githubusercontent.com/28452932/166642004-795283b4-7e48-4ad6-8ae4-4dc82aea340b.jpg)
+
+#### Run our node test_pkg count_words_server.py   --> which exists in workspace other_ws
+```bash
+$ rosrun test_pkg count_words_server.py
+```
+
+#### Run our node test_pkg count_words_client.py  --> which exists in workspace other_ws
+```bash
+$ rosrun test_pkg count_words_client.py <text>
+```
+
+#### Display the Graph nodes
+```bash
+$ rosrun rqt_graph rqt_graph 
+```
+
+
+## Create Custom Service - Adding Two Numbers - Example_08
+
+![Service](https://user-images.githubusercontent.com/28452932/166642257-b5ea5af5-bc38-4199-ad69-f7e03346d1bb.jpg)
+
+#### Run our node test_pkg add_two_numbers_server.py   --> which exists in workspace other_ws
+```bash
+$ rosrun test_pkg count_words_server.py
+```
+
+#### Run our node test_pkg add_two_numbers_server.py  --> which exists in workspace other_ws
+```bash
+$ rosrun test_pkg add_two_numbers_client.py <num1> <num2>
+```
+
+#### Display the Graph nodes
+```bash
+$ rosrun rqt_graph rqt_graph 
+```
+
+
+
+
+
