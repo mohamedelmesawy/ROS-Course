@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+    <node pkg="test_pkg" type="mytalker.py" name="mytalker" output="screen" respawn="false" respawn_delay="0" />
+    <node pkg="test_pkg" type="mylistener.py" name="mylistener" output="screen" respawn="false" respawn_delay="0" />
+</launch>
+
