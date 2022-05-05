@@ -210,4 +210,24 @@ $ rosrun rqt_graph rqt_graph
 
 
 
+## Create ROSLaunch File - Example_09
+
+![image](https://user-images.githubusercontent.com/28452932/166941048-ab3423bd-69bc-4769-96fa-887339b0885b.png)
+
+![image](https://user-images.githubusercontent.com/28452932/166941177-3bafcca6-c1e5-41e4-8adb-4e405d6ef1ce.png)
+
+![image](https://user-images.githubusercontent.com/28452932/166941191-f429b358-eafa-406d-8205-4c467c876816.png)
+
+#### Run our ROSLaunch_file in test_pkg   --> which exists in workspace other_ws
+```bash
+$ roslaunch test_pkg world.launch
+```
+
+#### Display the Graph nodes
+```bash
+$ rosrun rqt_graph rqt_graph 
+```
+
+
+
 
